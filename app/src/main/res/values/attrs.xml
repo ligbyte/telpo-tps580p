@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LineLayoutHelper">
+        <attr name="line_color" format="color" />
+        <attr name="line_drawable" format="reference" />
+        <attr name="line_fix_length" format="dimension" />
+        <attr name="line_width" format="dimension" />
+        <attr name="line_bottom" format="boolean" />
+        <attr name="line_top" format="boolean" />
+        <attr name="line_left" format="boolean" />
+        <attr name="line_right" format="boolean" />
+        <attr name="line_left_margin" format="dimension" />
+        <attr name="line_top_margin" format="dimension" />
+        <attr name="line_right_margin" format="dimension" />
+        <attr name="line_bottom_margin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ShapeLayoutHelper">
+        <attr name="radiusT" format="dimension" />
+        <attr name="circleRadiusT" format="dimension" />
+        <attr name="bottomLeftRadiusT" format="dimension" />
+        <attr name="bottomRightRadiusT" format="dimension" />
+        <attr name="topLeftRadiusT" format="dimension" />
+        <attr name="topRightRadiusT" format="dimension" />
+        <attr name="solidColorT" format="color" />
+        <attr name="strokeWidthT" format="dimension" />
+        <attr name="strokeColorT" format="color" />
+        <attr name="dashWidthT" format="dimension" />
+        <attr name="dashGapT" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonTipsView">
+        <attr name="ctv_style" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioLinearLayout">
+        <attr name="ratio_w_h" format="float" />
+    </declare-styleable>
+
+</resources>

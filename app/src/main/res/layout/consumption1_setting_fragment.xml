@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_main1_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/sv_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_page_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/fl_fix_amount_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="定额模式设置"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginRight="25dp"
+                                android:src="@mipmap/icon_arrow_right" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_gravity="bottom"
+                                android:background="#17d8d8d8" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_switch_face_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="刷脸消费"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_switch_face_pass"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginRight="25dp"
+                                android:src="@drawable/selector_bg_switch_button" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_gravity="bottom"
+                                android:background="#17d8d8d8" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_restart_app"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="重启应用"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_gravity="bottom"
+                                android:background="#17d8d8d8" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_shutdown_device"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="关闭设备"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_gravity="bottom"
+                                android:background="#17d8d8d8" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_reboot_device"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="重启设备"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_gravity="bottom"
+                                android:background="#17d8d8d8" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_device_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="序列号/版本号"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_device_serial_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="25dp"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="right"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_gravity="bottom"
+                                android:background="#17d8d8d8" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_page_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <!-- 餐别设置 -->
+                        <FrameLayout
+                            android:id="@+id/fl_canteen_time_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="餐别设置:"
+                                android:textColor="#666666"
+                                android:textSize="40sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_switch_breakfast"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingBottom="15dp"
+                                    android:layout_marginRight="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/selector_bg_canteen_type"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:id="@+id/iv_switch_breakfast"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/selector_bg_text" />
+
+                                    <TextView
+                                        android:id="@+id/tv_switch_breakfast"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:gravity="center"
+                                        android:text="早餐"
+                                        android:textColor="@color/selector_color_switch_text"
+                                        android:textSize="40sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_switch_lunch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingBottom="15dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginRight="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/selector_bg_canteen_type"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:id="@+id/iv_switch_lunch"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/selector_bg_text" />
+
+                                    <TextView
+                                        android:id="@+id/tv_switch_lunch"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:gravity="center"
+                                        android:text="午餐"
+                                        android:textColor="@color/selector_color_switch_text"
+                                        android:textSize="40sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_switch_dinner"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingBottom="15dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginRight="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/selector_bg_canteen_type"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:id="@+id/iv_switch_dinner"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/selector_bg_text" />
+
+                                    <TextView
+                                        android:id="@+id/tv_switch_dinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dp_10"
+                                        android:gravity="center"
+                                        android:text="晚餐"
+                                        android:textColor="@color/selector_color_switch_text"
+                                        android:textSize="40sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#17d8d8d8" />
+
+                        <!-- 早餐金额设置 -->
+                        <com.stkj.cashier.app.weigh.linelayout.LineLinearLayout
+                            android:id="@+id/ll_breakfast_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal"
+                            app:line_bottom="true"
+                            app:line_color="#17d8d8d8"
+                            app:line_width="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="早餐:"
+                                android:textColor="#666666"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_breakfast_time"
+                                android:layout_width="0dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="07:00 — 09:00"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="金额:"
+                                android:textColor="#666666"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_breakfast_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/selector_bg_text"
+                                android:gravity="center"
+                                android:hint="0.00"
+                                android:minWidth="180dp"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/text_6"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_marginRight="25dp"
+                                android:gravity="center"
+                                android:text="元/份"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+                        </com.stkj.cashier.app.weigh.linelayout.LineLinearLayout>
+
+                        <!-- 午餐金额设置 -->
+                        <com.stkj.cashier.app.weigh.linelayout.LineLinearLayout
+                            android:id="@+id/ll_lunch_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal"
+                            app:line_bottom="true"
+                            app:line_color="#17d8d8d8"
+                            app:line_width="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="午餐:"
+                                android:textColor="#666666"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_lunch_time"
+                                android:layout_width="0dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="07:00 — 09:00"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="金额:"
+                                android:textColor="#666666"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_lunch_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/selector_bg_text"
+                                android:gravity="center"
+                                android:hint="0.00"
+                                android:minWidth="180dp"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/text_6"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_marginRight="25dp"
+                                android:gravity="center"
+                                android:text="元/份"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+                        </com.stkj.cashier.app.weigh.linelayout.LineLinearLayout>
+
+                        <!-- 晚餐金额设置 -->
+                        <com.stkj.cashier.app.weigh.linelayout.LineLinearLayout
+                            android:id="@+id/ll_dinner_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal"
+                            app:line_bottom="true"
+                            app:line_color="#17d8d8d8"
+                            app:line_width="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="晚餐:"
+                                android:textColor="#666666"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_dinner_time"
+                                android:layout_width="0dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="07:00 — 09:00"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:text="金额:"
+                                android:textColor="#666666"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_dinner_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/selector_bg_text"
+                                android:gravity="center"
+                                android:hint="0.00"
+                                android:minWidth="180dp"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/text_6"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_marginRight="25dp"
+                                android:gravity="center"
+                                android:text="元/份"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+                        </com.stkj.cashier.app.weigh.linelayout.LineLinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_switch_fix_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingRight="25dp">
+
+                            <TextView
+                                android:id="@+id/tv_open_fix_amount"
+                                android:layout_width="180dp"
+                                android:layout_height="90dp"
+                                android:background="@drawable/selector_bg_button"
+                                android:gravity="center"
+                                android:text="开启"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_close_fix_amount"
+                                android:layout_width="180dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="60dp"
+                                android:background="@drawable/selector_bg_button"
+                                android:gravity="center"
+                                android:text="关闭"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </ScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="请点击键盘[上翻][下翻]选择内容，清除键返回"
+                android:textColor="#00dc82"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_tips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#6e4F4D4D"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginBottom="110dp"
+                android:background="@drawable/bg_tips"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="56sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+
+</layout>

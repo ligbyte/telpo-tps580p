@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_radius_8_bg_ffffff"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="本机消费账单"
+                    android:textColor="@color/text_3"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!--            <ImageView-->
+                <!--                android:id="@+id/ivClose"-->
+                <!--                android:layout_width="24dp"-->
+                <!--                android:layout_height="24dp"-->
+                <!--                android:layout_alignParentEnd="true"-->
+                <!--                android:layout_marginRight="24dp"-->
+                <!--                android:src="@mipmap/ic_dialog_close" />-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_radius_6_bg_f7f8fa"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="姓名"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    android:layout_marginStart="40dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="账号"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="餐别"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="金额"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="支付方式"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="时间"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvConsume"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp"
+                tools:listitem="@layout/item_bill"
+                tools:itemCount="4"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="346dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="24dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_radius_8_bg_ffffff"
+                android:padding="16dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="本机今日消费人数总计："
+                    android:textSize="18sp"
+                    android:textColor="@color/color_171717"
+                    android:textStyle="bold"/>
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chartNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                     />
+                <TextView
+                    android:id="@+id/tvMemberNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0位"
+                    android:textSize="28sp"
+                    android:textColor="@color/color_0087fa"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_radius_8_bg_ffffff"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="本机今日营业额总计："
+                    android:textSize="18sp"
+                    android:textColor="@color/color_171717"
+                    android:textStyle="bold"/>
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chartAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/tvTotalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥0.00"
+                    android:textSize="28sp"
+                    android:textColor="@color/color_0087fa"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

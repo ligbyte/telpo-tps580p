@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="1600dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_radius_8_bg_ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="人脸识别阈值设置"
+                android:textColor="@color/text_3"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="24dp"
+                android:src="@mipmap/ic_dialog_close" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/color_edf0f5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="开启活体："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switchLivenessEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:thumb="@drawable/selector_pay_confirm_thumb"
+                android:track="@drawable/selector_pay_confirm_track"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="戴口罩识别："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switchRcAttributeAndOcclusionMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:thumb="@drawable/selector_pay_confirm_thumb"
+                android:track="@drawable/selector_pay_confirm_track"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="开启相似度："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switchlivenessGaThresholdEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:thumb="@drawable/selector_pay_confirm_thumb"
+                android:track="@drawable/selector_pay_confirm_track"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="当前识别阀值："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/sbSearchThreshold"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:max="100"
+                android:min="0"
+                android:maxHeight="8dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/seek_bar_progress_bg"
+                android:thumb="@drawable/seek_bar_thumb_bg"
+                android:thumbOffset="5dp" />
+            <TextView
+                android:id="@+id/tvSearchThreshold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textColor="@color/color_3489f5"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="相似度阀值："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/sbLivenessGaThreshold"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:max="100"
+                android:maxHeight="8dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/seek_bar_progress_bg"
+                android:thumb="@drawable/seek_bar_thumb_bg"
+                android:thumbOffset="5dp" />
+            <TextView
+                android:id="@+id/tvLivenessGaThreshold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textColor="@color/color_3489f5"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="当前活体阀值："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/sbLivenessThreshold"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:max="100"
+                android:maxHeight="8dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/seek_bar_progress_bg"
+                android:thumb="@drawable/seek_bar_thumb_bg"
+                android:thumbOffset="5dp" />
+            <TextView
+                android:id="@+id/tvLivenessThreshold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textColor="@color/color_3489f5"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="64dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="当前识别距离："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+            <SeekBar
+                android:id="@+id/sbfaceMinThreshold"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:max="400"
+                android:maxHeight="8dp"
+                android:progress="100"
+                android:progressDrawable="@drawable/seek_bar_progress_bg"
+                android:thumb="@drawable/seek_bar_thumb_bg"
+                android:thumbOffset="5dp" />
+            <TextView
+                android:id="@+id/tvfaceMinThreshold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textColor="@color/color_3489f5"
+                android:textSize="18sp" />
+            <RadioGroup
+                android:id="@+id/rgSelectDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbSelect0"
+                    android:layout_width="128dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_face_distance_radio"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="0.5m"
+                    android:textColor="@color/selector_color_face_distance_radio"
+
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/rbSelect1"
+                    android:layout_width="128dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_face_distance_radio"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="0.8m"
+                    android:textColor="@color/selector_color_face_distance_radio"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/rbSelect2"
+                    android:layout_width="128dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_face_distance_radio"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="1m"
+                    android:textColor="@color/selector_color_face_distance_radio"
+                    android:textSize="22sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

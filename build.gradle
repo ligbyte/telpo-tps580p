@@ -1,0 +1,66 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    apply from: 'versions.gradle'
+
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+        maven { url "https://jitpack.io" }
+        google()
+//        maven { url 'https://maven.aliyun.com/repository/public/' }
+        mavenCentral()
+        jcenter()
+        // 私有仓库地址
+        maven { url "http://lib.gcssloop.com:8081/repository/gcssloop-central/" }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+//        maven { url 'https://dl.bintray.com/umsdk/release' }
+
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$versions.gralde"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$versions.daggerHilt"
+
+        classpath "com.tencent.bugly:tinker-support:$versions.tinkerSupport"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+        maven { url "https://jitpack.io" }
+        google()
+//        maven { url 'https://maven.aliyun.com/repository/public/' }
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        // 私有仓库地址
+        maven { url "http://lib.gcssloop.com:8081/repository/gcssloop-central/" }
+//        maven { url 'https://dl.bintray.com/jenly/maven' }
+//        maven { url 'https://dl.bintray.com/umsdk/release' }
+        flatDir {
+            dirs 'libs'
+        }
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    signingEnabled = false
+
+    tinkerEnabled = false
+}

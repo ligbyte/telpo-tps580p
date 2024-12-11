@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_weight="1"
+            android:text="李某某"
+            android:textColor="@color/color_171717"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCardNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6645790685"
+            android:textColor="@color/color_171717"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCardType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="XXXXXX"
+            android:textColor="@color/color_171717"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDepNameType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="研发效能部"
+            android:textColor="@color/color_171717"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/ivHeader"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_test_header"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOpeningDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2023-12-01 15:00:00"
+            android:textColor="@color/color_171717"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="入库识别"
+            android:gravity="center"
+            android:textColor="@color/color_ff3c30"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</layout>

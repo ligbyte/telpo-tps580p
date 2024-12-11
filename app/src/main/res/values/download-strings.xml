@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_app_model_prepare">准备更新%s</string>
+    <string name="update_app_model_start">开始下载</string>
+    <string name="update_app_model_progress">已下载%d%s</string>
+    <string name="update_app_model_success">下载完成</string>
+    <string name="update_app_model_error">下载失败</string>
+</resources>

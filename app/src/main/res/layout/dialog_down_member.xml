@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="440dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_radius_8_bg_ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_restart" />
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="24dp"
+                android:src="@mipmap/ic_dialog_close" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="确定要全量人脸库更新吗？"
+            android:textSize="22sp"
+            android:textColor="@color/text_3"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/tvConfirm"
+                android:layout_width="168dp"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_radius_10_bg_0087fa"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tvCancel"
+                android:layout_width="168dp"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_radius_8_bg_f1f2f4"
+                android:text="取消"
+                android:textColor="@color/color_171717"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

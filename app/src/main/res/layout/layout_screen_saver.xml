@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="480dp"
+        android:layout_height="240dp"
+        android:background="@drawable/shape_stroke_d2e9ff"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/rgSelectScreenSaver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rgSelect0"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:text="永不"
+                android:paddingStart="12dp"
+                android:textColor="@color/selector_color_screen_saver_radio"
+                android:background="@drawable/selector_screen_saver_radio"
+                android:textSize="18sp"
+                android:button="@null"
+                />
+            <RadioButton
+                android:id="@+id/rgSelect1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:text="3 分钟"
+                android:textColor="@color/selector_color_screen_saver_radio"
+                android:paddingStart="12dp"
+                android:background="@drawable/selector_screen_saver_radio"
+                android:textSize="18sp"
+                android:button="@null"
+                />
+            <RadioButton
+                android:id="@+id/rgSelect2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:text="5 分钟"
+                android:paddingStart="12dp"
+                android:textColor="@color/selector_color_screen_saver_radio"
+                android:background="@drawable/selector_screen_saver_radio"
+                android:textSize="18sp"
+                android:button="@null"
+                />
+            <RadioButton
+                android:id="@+id/rgSelect3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/selector_color_screen_saver_radio"
+                android:background="@drawable/selector_screen_saver_radio"
+                android:text="10 分钟"
+                android:paddingStart="12dp"
+                android:textSize="18sp"
+                android:button="@null"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+</layout>

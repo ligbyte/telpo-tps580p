@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_8_bg_ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llWifiConnect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="24dp"
+                android:text="wifi 连接"
+                android:textColor="@color/color_171717"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="end"
+                    android:text="当前连接网络："
+                    android:textColor="@color/text_6"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvWifiName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="盛图科技-5G"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_3489f5"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:id="@+id/tvWifiSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="点击唤起 wifi 设置页"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/shape_radius_30_bg_0087fa"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+       <LinearLayout
+           android:id="@+id/llNoWifiConnect"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:orientation="vertical">
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@mipmap/ic_no_wifi"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前暂无网络连接"
+                android:textColor="@color/color_171717"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"/>
+           <TextView
+               android:id="@+id/tvWifiSetting2"
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:text="点击唤起 wifi 设置页"
+               android:textColor="@color/white"
+               android:textSize="14sp"
+               android:gravity="center"
+               android:paddingLeft="16dp"
+               android:paddingRight="16dp"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/shape_radius_30_bg_0087fa"
+               />
+       </LinearLayout>
+
+    </LinearLayout>
+</layout>

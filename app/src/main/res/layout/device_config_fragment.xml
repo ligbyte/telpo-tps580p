@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_8_bg_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="24dp"
+            android:text="机号查看"
+            android:textColor="@color/color_171717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="76dp"
+                android:gravity="end"
+                android:text="设备号："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+           <TextView
+               android:id="@+id/tvSerialNumber"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="9b9760657b0a561e"
+               android:textSize="18sp"
+               android:textColor="@color/color_171717"
+               android:layout_marginLeft="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="end"
+                android:text="设备名称："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="米饭套餐窗口"
+                android:textSize="18sp"
+                android:textColor="@color/color_171717"
+                android:layout_marginLeft="40dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_edf0f5"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="32dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="32dp"
+            android:text="在线升级"
+            android:textColor="@color/color_171717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="66dp"
+                android:gravity="end"
+                android:text="当前版本："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="盛图慧餐宝 V1.0.1"
+                android:textSize="18sp"
+                android:textColor="@color/color_171717"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:id="@+id/tvCheckUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="点击检查更新"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shape_radius_30_bg_0087fa"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_edf0f5"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="32dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="32dp"
+            android:text="待机设置"
+            android:textColor="@color/color_171717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:gravity="end"
+                android:text="不活跃时启动屏幕保护："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvSelectScreenSaver"
+                android:layout_width="480dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/shape_stroke_e4e4e4"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="永不"
+                android:textColor="@color/text_3"
+                android:textSize="18sp"
+                android:drawableRight="@mipmap/ic_select_down"
+                android:paddingRight="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

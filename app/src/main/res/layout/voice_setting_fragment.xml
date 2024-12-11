@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_8_bg_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="24dp"
+            android:text="语音设置"
+            android:textColor="@color/color_171717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:text="当前音量大小："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+            <SeekBar
+                android:id="@+id/sbVolume"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="8dp"
+                android:min="0"
+                android:thumbOffset="5dp"
+                android:layout_marginLeft="40dp"
+                android:progressDrawable="@drawable/seek_bar_progress_bg"
+                android:thumb="@drawable/seek_bar_thumb_bg" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:text="当前语速："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+            <SeekBar
+                android:id="@+id/sbSpeak"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="8dp"
+                android:minHeight="8dp"
+                android:min="0"
+                android:max="20"
+                android:progress="10"
+                android:thumbOffset="5dp"
+                android:layout_marginLeft="40dp"
+                android:progressDrawable="@drawable/seek_bar_progress_bg"
+                android:thumb="@drawable/seek_bar_thumb_bg" />
+
+        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="136dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:gravity="end"-->
+<!--                android:text="语音场景："-->
+<!--                android:textColor="@color/text_6"-->
+<!--                android:textSize="18sp" />-->
+<!--            <RadioGroup-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="40dp"-->
+<!--                android:orientation="horizontal">-->
+<!--                <RadioButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="消费成功"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textColor="@color/color_171717"/>-->
+<!--                <RadioButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="取餐成功"-->
+<!--                    android:layout_marginLeft="80dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textColor="@color/color_171717"/>-->
+
+<!--            </RadioGroup>-->
+
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:text="语音测试："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tvTtsTest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="试听"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shape_radius_30_bg_0087fa"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:text="消费成功文案："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/etConsumptionSuccess"
+                android:layout_width="480dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/shape_stroke_e4e4e4"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="消费成功"
+                android:textColor="@color/text_3"
+                android:textColorHint="@color/text_9"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:text="取餐成功文案："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/etPickUpSuccess"
+                android:layout_width="480dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/shape_stroke_e4e4e4"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="取餐成功"
+                android:textColor="@color/text_3"
+                android:textColorHint="@color/text_9"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

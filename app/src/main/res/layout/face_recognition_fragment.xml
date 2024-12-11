@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llFaceSetting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_radius_8_bg_ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="24dp"
+                android:text="人脸授权设置"
+                android:textColor="@color/color_171717"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="end"
+                    android:text="当前授权模式："
+                    android:textColor="@color/text_6"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvSelectAuth"
+                    android:layout_width="480dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/shape_stroke_e4e4e4"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="文件模式"
+                    android:textColor="@color/text_3"
+                    android:textSize="18sp"
+                    android:drawableRight="@mipmap/ic_select_down"
+                    android:paddingRight="20dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="end"
+                    android:text="人脸识别阈值设置："
+                    android:textColor="@color/text_6"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/tvFaceSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="点击设置"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/shape_radius_30_bg_0087fa"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="end"
+                    android:text="本机人脸数据："
+                    android:textColor="@color/text_6"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tvMemberNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="895"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_3489f5"
+                    android:layout_marginLeft="40dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人已入库"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_171717"
+                    android:layout_marginLeft="3dp"/>
+
+                <TextView
+                    android:id="@+id/tvCheckMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="点击查看详情"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/shape_radius_30_bg_0087fa"
+                    />
+                <TextView
+                    android:id="@+id/tvClearMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="清空人脸数据库"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/shape_radius_30_bg_0087fa"
+                    />
+                <TextView
+                    android:id="@+id/tvDownLoadMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="全量人脸库更新"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/shape_radius_30_bg_0087fa"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="end"
+                    android:text="取餐模式排队人数上限："
+                    android:textColor="@color/text_6"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etFaceNumber"
+                    android:layout_width="360dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/shape_stroke_e4e4e4"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:text="3"
+                    android:inputType="number"
+                    android:textColor="@color/text_3"
+                    android:textColorHint="@color/text_9"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llCompanyMember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_radius_8_bg_ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivCircleBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:padding="11dp"
+                    android:src="@mipmap/ic_circle_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="本机人脸信息"
+                    android:textColor="@color/text_3"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <!--            <ImageView-->
+                <!--                android:id="@+id/ivClose"-->
+                <!--                android:layout_width="24dp"-->
+                <!--                android:layout_height="24dp"-->
+                <!--                android:layout_alignParentEnd="true"-->
+                <!--                android:layout_marginRight="24dp"-->
+                <!--                android:src="@mipmap/ic_dialog_close" />-->
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/shape_radius_6_bg_f7f8fa"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tvSelectMember"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/shape_stroke_e4e4e4"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="全部人员"
+                    android:textColor="@color/text_3"
+                    android:textSize="18sp"
+                    android:drawableRight="@mipmap/ic_select_down"
+                    android:paddingRight="20dp"/>
+                <TextView
+                    android:id="@+id/tvSelectDep"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_stroke_e4e4e4"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="全部部门"
+                    android:textColor="@color/text_3"
+                    android:textSize="18sp"
+                    android:drawableRight="@mipmap/ic_select_down"
+                    android:paddingRight="20dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_stroke_e8eaed"
+                    android:layout_marginStart="20dp"
+                    >
+                    <EditText
+                        android:id="@+id/etKeyword"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_3"
+                        android:textSize="16sp"
+                        android:textColorHint="@color/text_9"
+                        android:hint="输入姓名或者手机号"
+                        android:singleLine="true"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="12dp"
+                        android:imeOptions="actionDone"/>
+                    <TextView
+                        android:id="@+id/tvSearch"
+                        android:layout_width="84dp"
+                        android:layout_height="match_parent"
+                        android:text="查询"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/shape_radius_right_8_bg_0087fa"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_radius_6_bg_f7f8fa"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="姓名"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    android:layout_marginStart="40dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="账号"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="账号类别"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="部门"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="人脸照片"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="最后一次同步时间"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="入库状态"
+                    android:textColor="@color/text_3"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFaceInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp"
+                tools:listitem="@layout/item_face_info"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

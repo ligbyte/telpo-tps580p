@@ -1,0 +1,293 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+def gitMainSha = 'git rev-parse --short HEAD'.execute([], project.rootDir).text.trim()
+
+android {
+    compileSdkVersion build_versions.compileSdk
+    buildToolsVersion build_versions.buildTools
+
+    defaultConfig {
+        applicationId "com.stkj.cashier"
+        minSdkVersion build_versions.minSdk
+        targetSdkVersion build_versions.targetSdk
+        versionCode app_version.versionCode
+        versionName app_version.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk { abiFilters "armeabi", "armeabi-v7a", "arm64-v8a" }
+
+    }
+
+    packagingOptions {
+        exclude 'META-INF/*.kotlin_module'
+    }
+
+//    if (rootProject.ext.signingEnabled) {
+    signingConfigs {
+        config {
+            //加载配置资源
+            Properties properties = new Properties()
+            InputStream inputStream = rootProject.file('local.properties').newDataInputStream()
+            properties.load(inputStream)
+
+            //读取配置文件
+//                def storeFileDir = properties.getProperty('storeFile.file')
+//                storeFile file(storeFileDir)
+
+//                //读取配置字段
+//                def key_keyAlias = properties.getProperty('platform')
+//                def key_keyPassword = properties.getProperty('android')
+//                def key_storePassword = properties.getProperty('android')
+//
+//                keyAlias key_keyAlias
+//                keyPassword key_keyPassword
+//                storePassword key_storePassword
+        }
+
+        release {
+            storePassword "86337898"
+            keyAlias "telpo"
+            keyPassword "86337898"
+            storeFile file('platform_telpo_keyboard.jks')
+
+        }
+        debug {
+            storePassword "86337898"
+            keyAlias "telpo"
+            keyPassword "86337898"
+            storeFile file('platform_telpo_keyboard.jks')
+
+         /*   storePassword "86337898"
+            keyAlias "telpo"
+            keyPassword "86337898"
+            storeFile file('platform_D2_580P.jks')*/
+        }
+
+    }
+//    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    productFlavors {
+        envOfficial {
+            flavorDimensions("envType")
+            buildConfigField('int', 'envType', '0')
+        }
+        envTest {
+            flavorDimensions("envType")
+            buildConfigField('int', 'envType', '1' )
+        }
+    }
+
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            if (rootProject.ext.signingEnabled) {
+//                signingConfig signingConfigs.config
+//            }
+//        }
+//    }
+
+    android.applicationVariants.configureEach { variant ->
+        variant.outputs.configureEach {
+            outputFileName = "cashier_${variant.flavorName}_v${variant.versionName}_${variant.buildType.name}_${gitMainSha}.apk"
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        warning 'InvalidPackage'
+    }
+
+    buildFeatures {
+        dataBinding = true
+        buildConfig = true
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+//    flavorDimensions "flavor"
+//    productFlavors {
+//        // 正式
+//        flavors_release {
+//            dimension "flavor"
+//        }
+//        // 开发
+//        flavors_dev {
+//            dimension "flavor"
+//        }
+//    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+greendao {
+    schemaVersion 4 // 数据库版本号
+    daoPackage 'com.stkj.cashier.greendao'//greenDao 自动生成的代码保存的包名
+    targetGenDir 'src/main/java' //自动生成的代码存储的路径，默认是 build/generated/source/greendao.
+    generateTests false //true的时候自动生成测试单元
+    targetGenDirTests 'src/androidTest/java' // 测试单元的生成目录默认是 src/androidTest/java
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(name: 'FacePassAndroidProSDK-year-release', ext: 'aar')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+//    implementation "androidx.core:core-ktx:$versions.coreKtx"
+    implementation "com.google.android.material:material:$versions.material"
+    implementation "androidx.constraintlayout:constraintlayout:$versions.constraintlayout"
+    implementation "androidx.recyclerview:recyclerview:$versions.recyclerview"
+//    implementation files('libs/telpoLib_v2.10.20231110.aar')
+//    api files('libs/telpo_sdk.jar')
+    // implementation files('libs/telpo_sdk_20230428.jar')
+//    api project(":telpo")
+
+//    implementation files('libs/core-3.1.0.jar')
+
+//    implementation files('libs\\telpo_sdk_20240428.jar')
+    implementation files('libs\\kh_rk3568Api.jar')
+
+//    implementation(name: 'libscan-v1.21-ba0b140', ext: 'aar')
+//    implementation files('libs\\telpo_sdk_210813_v1.jar')
+    //implementation files('libs\\telpo_sdk_210813_v1.jar')
+
+    //implementation files('libs/sdkapi.jar')
+    // implementation(name: 'SerialPortLib-release', ext: 'aar')
+
+    testImplementation "junit:junit:$versions.junit"
+    androidTestImplementation "androidx.test.ext:junit:$versions.androidExtJunit"
+    androidTestImplementation "androidx.test:runner:$versions.runner"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espressoCore"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.kotlinxCoroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.kotlinxCoroutines"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifecycleKtx"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycleKtx"
+
+    //lifecycle
+    kapt "androidx.lifecycle:lifecycle-compiler:$versions.lifecycle"
+    //room
+//    kapt "androidx.room:room-compiler:$versions.room"
+    //hilt
+    implementation "com.google.dagger:hilt-android:$versions.daggerHilt"
+    kapt "com.google.dagger:hilt-compiler:$versions.daggerHilt"
+
+    implementation "com.github.jenly1314:mvvmframe:$versions.mvvmframe"
+    //app-updater
+    implementation "com.github.jenly1314.AppUpdater:app-updater:$versions.appUpdater"
+    //app-dialog
+    implementation "com.github.jenly1314.AppUpdater:app-dialog:$versions.appUpdater"
+
+    implementation "com.king.thread:nevercrash:$versions.nevercrash"
+
+    implementation "com.king.base:util:$versions.base"
+    implementation "com.king.base:adapter:$versions.base"
+
+    implementation "com.github.jenly1314:BaseUrlManager:$versions.baseUrlManager"
+
+    implementation "com.orhanobut:logger:$versions.logger"
+
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:$versions.brvah"
+
+    implementation "io.github.scwang90:refresh-layout-kernel:$versions.smartRefreshLayout"
+    implementation "io.github.scwang90:refresh-header-material:$versions.smartRefreshLayout"
+    implementation "io.github.scwang90:refresh-footer-classics:$versions.smartRefreshLayout"
+//    implementation "io.github.scwang90:SmartRefreshLayout:$versions.smartRefreshLayout"
+//    implementation "io.github.scwang90:SmartRefreshHeader:$versions.smartRefreshLayout"
+
+    implementation "com.github.bumptech.glide:glide:$versions.glide"
+    kapt "com.github.bumptech.glide:compiler:$versions.glide"
+    api "com.github.bumptech.glide:okhttp3-integration:$versions.glide"
+    
+    implementation "com.tencent:mmkv:$versions.mmkv"
+
+//    implementation "com.github.tbruyelle:rxpermissions:$versions.rxpermissions"
+    implementation 'com.guolindev.permissionx:permissionx:1.5.1'
+//    implementation 'com.permissionx.guolindev:permissionx:1.1.1'
+//    implementation "com.tencent.bugly:crashreport_upgrade:$versions.bugly"
+
+//    implementation "com.tencent.tinker:tinker-android-lib:$versions.tinker"
+
+    implementation "androidx.multidex:multidex:$versions.multidex"
+
+    //leakCanary
+//    debugImplementation "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
+
+    implementation "com.github.GrenderG:Toasty:$versions.toasty"
+
+    implementation "de.hdodenhof:circleimageview:$versions.circleimageview"
+
+    implementation "io.github.youth5201314:banner:$versions.banner"
+
+    implementation "me.jessyan:autosize:$versions.autosize"
+
+    implementation "io.github.androidktx:android-ktx:$versions.androidktx"
+
+    implementation "com.github.jenly1314:kvcache:$versions.kvcache"
+
+    implementation "com.king.image:imageviewer:$versions.imageviewer"
+//    implementation "com.king.guide:guidepage:$versions.guidepage"
+    //圆角布局
+    implementation 'com.gcssloop.widget:rclayout:1.8.1'
+
+    implementation "org.greenrobot:eventbus:$versions.eventbus"
+
+    //greendao
+    implementation 'org.greenrobot:greendao:3.3.0'
+    // add library
+    implementation 'org.greenrobot:greendao-generator:3.3.0'
+    // RxJava
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.6'
+    //串口
+    implementation 'io.github.xmaihh:serialport:2.1.1'
+
+//
+//    implementation "de.hdodenhof:circleimageview:$versions.circleimageview"
+//
+//    implementation "com.github.chrisbanes:PhotoView:$versions.photoView"
+//
+//    debugImplementation "com.amitshekhar.android:debug-db:$versions.debugDb"
+    // Gson
+//    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation project(":lib-component")
+    implementation project(":utilcode")
+    implementation project(":MPChartLib")
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+    implementation 'com.jakewharton:process-phoenix:3.0.0'
+    implementation 'com.github.jenly1314:viewfinderview:1.2.0'
+
+}
+
+if (rootProject.ext.tinkerEnabled) {
+    apply from: 'tinker-support.gradle'
+}

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_8_bg_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="24dp"
+            android:text="IP 地址配置"
+            android:textColor="@color/color_171717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="end"
+                android:text="服务器地址："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="480dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/shape_stroke_e4e4e4"
+                android:gravity="center_vertical"
+                android:hint="请输入服务器地址"
+                android:imeOptions="actionDone"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_3"
+                android:textColorHint="@color/text_9"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="end"
+                android:text="端口号："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="480dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/shape_stroke_e4e4e4"
+                android:gravity="center_vertical"
+                android:hint="请输入端口号，例如：9003"
+                android:paddingLeft="20dp"
+                android:textColor="@color/text_3"
+                android:textColorHint="@color/text_9"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="end"
+                android:text="通信方式："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="480dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/shape_stroke_e4e4e4"
+                android:drawableRight="@mipmap/ic_select_down"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="http"
+                android:textColor="@color/text_3"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="196dp"
+            android:layout_marginTop="24dp"
+            android:text="修改完接口地址后会立即自动重启应用"
+            android:textColor="@color/color_ff7373"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="24dp"
+            android:text="心跳间隔时间（秒）"
+            android:textColor="@color/color_171717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="end"
+                android:text="心跳间隔："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etHeartBeat"
+                android:layout_width="480dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/shape_stroke_e4e4e4"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="30"
+                android:inputType="number"
+                android:textColor="@color/text_3"
+                android:textColorHint="@color/text_9"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

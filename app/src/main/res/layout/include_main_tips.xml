@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stkj.cashier.app.weigh.shapelayout.ShapeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="70dp"
+    app:radiusT="10dp"
+    app:solidColorT="#f0384055">
+
+    <ImageView
+        android:id="@+id/iv_common_tips"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/icon_tips_alert" />
+
+    <TextView
+        android:id="@+id/tv_common_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</com.stkj.cashier.app.weigh.shapelayout.ShapeLinearLayout>

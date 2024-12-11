@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_8_bg_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="24dp"
+            android:text="重启软件"
+            android:textColor="@color/color_171717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="76dp"
+                android:gravity="end"
+                android:text="设备重启："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tvRestart"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="点击重启"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shape_radius_30_bg_0087fa"
+                />
+
+            <TextView
+                android:id="@+id/tvDeviceClose"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="关机"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shape_radius_30_bg_0087fa"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="76dp"
+                android:gravity="end"
+                android:text="软件App："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tvAppClose"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="点击重启"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shape_radius_30_bg_0087fa"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="76dp"
+                android:gravity="end"
+                android:text="状态栏："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tvStatusCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="隐藏"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shape_radius_30_bg_0087fa"
+                />
+            <TextView
+                android:id="@+id/tvStatusShow"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="显示"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shape_radius_30_bg_0087fa"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="76dp"
+                android:gravity="end"
+                android:text="导航栏："
+                android:textColor="@color/text_6"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tvNavbarCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="隐藏"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shape_radius_30_bg_0087fa"
+                />
+            <TextView
+                android:id="@+id/tvNavbarShow"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="显示"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shape_radius_30_bg_0087fa"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0087fa</color>
+    <color name="colorPrimaryDark">#0087fa</color>
+    <color name="colorAccent">#0c6aac</color>
+
+    <color name="title_bg">#0087fa</color>
+
+    <color name="splash_bg">#0087fa</color>
+
+    <color name="default_bg">#f2f3f6</color>
+
+    <color name="line">#f2f3f6</color>
+
+    <color name="line_divider">#f2f3f6</color>
+
+    <color name="white_pressed">#10000000</color>
+
+    <color name="white_7f">#7fffffff</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+
+    <color name="text_default">#666666</color>
+
+    <color name="text_3">#333333</color>
+    <color name="text_6">#666666</color>
+    <color name="text_9">#999999</color>
+
+    <color name="tab_normal">#666666</color>
+    <color name="tab_selected">#0087fa</color>
+
+    <color name="text_theme">#0087fa</color>
+
+    <color name="home_menu_normal">#999999</color>
+    <color name="home_menu_selected">#A38D59</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="btn_bg_normal">#0087fa</color>
+    <color name="btn_bg_pressed">#0c6aad</color>
+
+    <color name="color_0087fa">#0087FA</color>
+    <color name="color_c7e3ff">#C7E3FF</color>
+    <color name="color_171717">#171717</color>
+    <color name="color_fff2f2">#FFF2F2</color>
+    <color name="color_ff3c30">#FF3C30</color>
+    <color name="color_edf0f5">#EDF0F5</color>
+    <color name="color_e3ebf7">#E3EBF7</color>
+    <color name="color_e7e7e7">#E7E7E7</color>
+    <color name="color_cbd4df">#CBD4DF</color>
+    <color name="color_b6d6ff">#B6D6FF</color>
+    <color name="color_0171f8">#0171F8</color>
+    <color name="color_f8fbff">#F8FBFF</color>
+    <color name="color_fbfbfb">#FBFBFB</color>
+    <color name="color_ff7373">#FF7373</color>
+    <color name="color_e3e9f5">#E3E9F5</color>
+    <color name="color_e4e4e4">#E4E4E4</color>
+    <color name="color_d2e9ff">#D2E9FF</color>
+    <color name="color_f4f7f9">#F4F7F9</color>
+    <color name="color_f7f8fa">#F7F8FA</color>
+    <color name="color_3489f5">#3489F5</color>
+    <color name="color_d9d9d9">#D9D9D9</color>
+    <color name="color_e8eaed">#E8EAED</color>
+    <color name="color_f1f2f4">#F1F2F4</color>
+    <color name="color_58afff">#58AFFF</color>
+    <color name="color_99ceff">#99CEFF</color>
+    <color name="color_e9f3ff">#E9F3FF</color>
+    <color name="color_d3d8dd">#D3D8DD</color>
+    <color name="color_e5e5e5">#E5E5E5</color>
+
+
+
+</resources>
