@@ -24,7 +24,7 @@ import androidx.annotation.RequiresApi
 import androidx.core.util.valueIterator
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import com.blankj.utilcode.util.*
+import com.stkj.cashier.util.util.*
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.FutureTarget
 import com.king.base.util.SystemUtils

@@ -3,7 +3,7 @@ package com.stkj.cashier.util;
 import androidx.core.internal.view.SupportMenu;
 import androidx.core.view.MotionEventCompat;
 
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.LogUtils;
 
 import java.util.Objects;
 

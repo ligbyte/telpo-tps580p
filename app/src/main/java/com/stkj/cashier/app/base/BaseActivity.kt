@@ -17,8 +17,8 @@ import androidx.annotation.StringRes
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.ViewDataBinding
-import com.blankj.utilcode.util.BarUtils
-import com.blankj.utilcode.util.LogUtils
+import com.stkj.cashier.util.util.BarUtils
+import com.stkj.cashier.util.util.LogUtils
 //import com.huayi.hgt.hyznjar.CustomAPI
 import com.king.base.util.StringUtils
 

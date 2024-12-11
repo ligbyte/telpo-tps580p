@@ -10,7 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.LogUtils;
 
 /**
  * @description $

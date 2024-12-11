@@ -10,8 +10,8 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.isVisible
-import com.blankj.utilcode.util.ConvertUtils
-import com.blankj.utilcode.util.ScreenUtils
+import com.stkj.cashier.util.util.ConvertUtils
+import com.stkj.cashier.util.util.ScreenUtils
 import com.king.android.ktx.fragment.argument
 import com.stkj.cashier.R
 import com.stkj.cashier.app.base.BaseFragment
@@ -30,8 +30,8 @@ import android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP
 import android.graphics.Color
 import android.os.Process
 import android.provider.Settings
-import com.blankj.utilcode.util.BarUtils
-import com.blankj.utilcode.util.LogUtils
+import com.stkj.cashier.util.util.BarUtils
+import com.stkj.cashier.util.util.LogUtils
 //import com.common.api.system.SystemApiUtil
 //import com.huayi.hgt.hyznjar.CustomAPI
 import com.jakewharton.processphoenix.ProcessPhoenix

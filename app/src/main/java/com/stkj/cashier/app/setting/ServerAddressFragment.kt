@@ -41,7 +41,7 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
-import com.blankj.utilcode.util.*
+import com.stkj.cashier.util.util.*
 import com.jakewharton.processphoenix.ProcessPhoenix
 import com.stkj.cashier.App
 import com.stkj.cashier.bean.MessageEventBean

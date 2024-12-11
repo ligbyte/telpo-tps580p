@@ -6,7 +6,7 @@ import android.text.TextUtils
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.blankj.utilcode.util.*
+import com.stkj.cashier.util.util.*
 import com.google.gson.Gson
 import com.stkj.cashier.App
 import com.stkj.cashier.R

@@ -10,8 +10,8 @@ import android.widget.TextView
 import androidx.annotation.StringRes
 import androidx.core.app.ActivityOptionsCompat
 import androidx.databinding.ViewDataBinding
-import com.blankj.utilcode.util.LogUtils
-import com.blankj.utilcode.util.SPUtils
+import com.stkj.cashier.util.util.LogUtils
+import com.stkj.cashier.util.util.SPUtils
 import com.king.base.util.StringUtils
 import com.king.frame.mvvmframe.base.BaseFragment
 import com.king.frame.mvvmframe.base.BaseModel

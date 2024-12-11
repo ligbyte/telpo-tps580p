@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.LogUtils;
 
 /**
  * Created by linyue on 16/1/2.

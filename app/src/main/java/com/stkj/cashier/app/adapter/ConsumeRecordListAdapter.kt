@@ -7,9 +7,9 @@ import android.annotation.SuppressLint
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.blankj.utilcode.util.StringUtils
-import com.blankj.utilcode.util.StringUtils.stringToBitmap
-import com.blankj.utilcode.util.Utils
+import com.stkj.cashier.util.util.StringUtils
+import com.stkj.cashier.util.util.StringUtils.stringToBitmap
+import com.stkj.cashier.util.util.Utils
 import com.bumptech.glide.Glide
 import com.stkj.cashier.R
 

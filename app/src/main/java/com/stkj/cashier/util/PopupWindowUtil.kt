@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.PopupWindow
 import android.widget.RadioButton
 import android.widget.RadioGroup
-import com.blankj.utilcode.util.SizeUtils
+import com.stkj.cashier.util.util.SizeUtils
 import com.bumptech.glide.load.data.ExifOrientationStream
 import com.stkj.cashier.R
 import android.view.Gravity

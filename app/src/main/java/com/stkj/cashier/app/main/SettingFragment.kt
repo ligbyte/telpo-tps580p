@@ -6,7 +6,7 @@ import android.view.View
 import androidx.core.util.valueIterator
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import com.blankj.utilcode.util.SPUtils
+import com.stkj.cashier.util.util.SPUtils
 //import com.stkj.cashier.BuildConfig
 import com.stkj.cashier.R
 import com.stkj.cashier.app.Constants

@@ -18,7 +18,7 @@ import android.view.View.GONE
 import android.view.View.VISIBLE
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.blankj.utilcode.util.*
+import com.stkj.cashier.util.util.*
 import com.bumptech.glide.Glide
 import com.google.gson.Gson
 import com.king.base.util.SystemUtils

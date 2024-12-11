@@ -9,7 +9,7 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.LogUtils;
 import com.google.gson.Gson;
 
 /**

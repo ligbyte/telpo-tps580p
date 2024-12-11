@@ -5,9 +5,9 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.SeekBar
 import androidx.core.view.isVisible
-import com.blankj.utilcode.util.LogUtils
-import com.blankj.utilcode.util.SPUtils
-import com.blankj.utilcode.util.VolumeUtil
+import com.stkj.cashier.util.util.LogUtils
+import com.stkj.cashier.util.util.SPUtils
+import com.stkj.cashier.util.util.VolumeUtil
 import com.king.android.ktx.fragment.argument
 import com.stkj.cashier.App
 import com.stkj.cashier.R

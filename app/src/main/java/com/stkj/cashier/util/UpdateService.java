@@ -26,8 +26,8 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.content.FileProvider;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import com.blankj.utilcode.util.AppUtils;
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.AppUtils;
+import com.stkj.cashier.util.util.LogUtils;
 import com.stkj.cashier.App;
 import com.stkj.cashier.R;
 import com.stkj.cashier.bean.MessageEventBean;

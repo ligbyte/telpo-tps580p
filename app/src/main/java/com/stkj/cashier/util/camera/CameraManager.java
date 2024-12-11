@@ -9,7 +9,7 @@ import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.WindowManager;
 
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.LogUtils;
 import com.stkj.cashier.util.SettingVar;
 
 import java.util.ArrayList;

@@ -3,7 +3,7 @@ package com.stkj.cashier.app.adapter
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import android.annotation.SuppressLint
-import com.blankj.utilcode.util.StringUtils
+import com.stkj.cashier.util.util.StringUtils
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.stkj.cashier.App
 import com.stkj.cashier.R

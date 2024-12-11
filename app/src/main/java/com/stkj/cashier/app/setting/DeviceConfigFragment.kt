@@ -28,15 +28,15 @@ import android.net.Uri
 import android.os.Build
 import android.os.Environment
 import android.provider.Settings
-import com.blankj.utilcode.util.SizeUtils.getMeasuredHeight
+import com.stkj.cashier.util.util.SizeUtils.getMeasuredHeight
 
 
 //import com.tencent.bugly.proguard.v
 import android.provider.Settings.System.SCREEN_OFF_TIMEOUT
 import android.widget.*
 import androidx.annotation.RequiresApi
-import com.blankj.utilcode.util.*
-import com.blankj.utilcode.util.LogUtils.E
+import com.stkj.cashier.util.util.*
+import com.stkj.cashier.util.util.LogUtils.E
 import com.google.gson.Gson
 import com.king.app.dialog.AppDialog
 import com.king.app.dialog.AppDialogConfig

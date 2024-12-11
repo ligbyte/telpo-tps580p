@@ -2,7 +2,7 @@ package com.stkj.cashier.app.main
 
 import android.app.Application
 import androidx.lifecycle.MutableLiveData
-import com.blankj.utilcode.util.LogUtils
+import com.stkj.cashier.util.util.LogUtils
 import com.stkj.cashier.app.base.BaseModel
 import com.stkj.cashier.app.base.BaseViewModel
 import com.stkj.cashier.bean.*

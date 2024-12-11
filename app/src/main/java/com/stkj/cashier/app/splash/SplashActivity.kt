@@ -14,7 +14,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.blankj.utilcode.util.*
+import com.stkj.cashier.util.util.*
 import com.google.gson.Gson
 import com.permissionx.guolindev.PermissionX
 import com.stkj.cashier.App

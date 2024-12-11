@@ -53,7 +53,14 @@
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.DELETE_PACKAGES"
         tools:ignore="ProtectedPermissions" />
-
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+        </intent>
+    </queries>
     <application
         android:name=".App"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -94,6 +101,39 @@
         <activity android:name=".app.splash.ResumeActivity"
             android:screenOrientation="landscape"/>
 
+        <activity
+            android:name="com.stkj.cashier.util.util.UtilsTransActivity4MainProcess"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/ActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.stkj.cashier.util.util.UtilsTransActivity"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:multiprocess="true"
+            android:theme="@style/ActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <provider
+            android:name="com.stkj.cashier.util.util.UtilsFileProvider"
+            android:authorities="${applicationId}.utilcode.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/util_code_provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.stkj.cashier.util.util.MessengerUtils$ServerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="${applicationId}.messenger" />
+            </intent-filter>
+        </service>
+        
         <receiver
             android:name="com.stkj.cashier.util.BootCompleteReceiver"
             android:enabled="true"
@@ -104,6 +144,10 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <!--  <category android:name="android.intent.category.DEFAULT" />-->
             </intent-filter>
+            
+            
+            
+            
 <!--            <intent-filter>-->
 <!--                &lt;!&ndash; 关机广播 &ndash;&gt;-->
 <!--                <action android:name="android.intent.action.ACTION_SHUTDOWN" />-->

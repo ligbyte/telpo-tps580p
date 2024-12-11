@@ -4,7 +4,7 @@ import android.content.Context;
 
 import androidx.room.RoomDatabase;
 
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.LogUtils;
 import com.google.gson.GsonBuilder;
 import com.king.base.baseurlmanager.BaseUrlManager;
 import com.king.frame.mvvmframe.config.FrameConfigModule;

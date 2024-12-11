@@ -14,7 +14,7 @@ import android.util.Log;
 
 import androidx.core.content.FileProvider;
 
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.LogUtils;
 
 import java.io.File;
 import java.io.FileInputStream;

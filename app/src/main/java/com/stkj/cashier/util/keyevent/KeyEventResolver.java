@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import android.view.InputDevice;
 import android.view.KeyEvent;
 
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.LogUtils;
 
 
 /**

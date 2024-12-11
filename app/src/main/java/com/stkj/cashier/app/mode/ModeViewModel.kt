@@ -3,8 +3,8 @@ package com.stkj.cashier.app.mode
 import android.app.Application
 import android.speech.tts.TextToSpeech
 import androidx.lifecycle.MutableLiveData
-import com.blankj.utilcode.util.LogUtils
-import com.blankj.utilcode.util.SPUtils
+import com.stkj.cashier.util.util.LogUtils
+import com.stkj.cashier.util.util.SPUtils
 import com.google.gson.Gson
 import com.king.base.util.SystemUtils
 import com.stkj.cashier.App

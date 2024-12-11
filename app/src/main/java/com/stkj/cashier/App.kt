@@ -6,7 +6,7 @@ import android.os.Environment
 import android.speech.tts.TextToSpeech
 
 import androidx.multidex.MultiDex
-import com.blankj.utilcode.util.CrashHandler
+import com.stkj.cashier.util.util.CrashHandler
 import com.king.base.baseurlmanager.BaseUrlManager
 import com.king.base.baseurlmanager.bean.UrlInfo
 import com.king.kvcache.KVCache

@@ -8,8 +8,8 @@ import android.util.Log
 import android.view.Choreographer
 import android.view.View
 import android.widget.TextView
-import com.blankj.utilcode.util.LogUtils
-import com.blankj.utilcode.util.SPUtils
+import com.stkj.cashier.util.util.LogUtils
+import com.stkj.cashier.util.util.SPUtils
 import com.jakewharton.processphoenix.ProcessPhoenix
 import com.stkj.cashier.App
 import com.stkj.cashier.BuildConfig

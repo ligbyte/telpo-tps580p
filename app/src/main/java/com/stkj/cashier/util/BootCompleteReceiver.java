@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import com.blankj.utilcode.util.LogUtils;
+import com.stkj.cashier.util.util.LogUtils;
 import com.stkj.cashier.App;
 import com.stkj.cashier.app.main.MainActivity;
 import com.stkj.cashier.app.splash.SplashActivity;

@@ -2,8 +2,8 @@ package com.stkj.cashier.app.stat
 
 import android.os.Bundle
 import android.util.Log
-import com.blankj.utilcode.util.EncryptUtils
-import com.blankj.utilcode.util.LogUtils
+import com.stkj.cashier.util.util.EncryptUtils
+import com.stkj.cashier.util.util.LogUtils
 import com.stkj.cashier.App
 import com.stkj.cashier.R
 import com.stkj.cashier.app.base.BaseFragment
