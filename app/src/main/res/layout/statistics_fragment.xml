@@ -136,7 +136,7 @@
                     android:textSize="18sp"
                     android:textColor="@color/color_171717"
                     android:textStyle="bold"/>
-                <com.github.mikephil.charting.charts.BarChart
+                <com.stkj.cashier.charting.charts.BarChart
                     android:id="@+id/chartNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
                     android:textSize="18sp"
                     android:textColor="@color/color_171717"
                     android:textStyle="bold"/>
-                <com.github.mikephil.charting.charts.PieChart
+                <com.stkj.cashier.charting.charts.PieChart
                     android:id="@+id/chartAmount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

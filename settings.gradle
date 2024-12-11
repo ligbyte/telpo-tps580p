@@ -1,3 +1,2 @@
-include ':MPChartLib'
 rootProject.name='telpo-tps580p'
 include ':app'

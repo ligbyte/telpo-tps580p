@@ -278,7 +278,6 @@ dependencies {
 //    debugImplementation "com.amitshekhar.android:debug-db:$versions.debugDb"
     // Gson
 //    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
-    implementation project(":MPChartLib")
     compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
 
     implementation 'com.jakewharton:process-phoenix:3.0.0'
